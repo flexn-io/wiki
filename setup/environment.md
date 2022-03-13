@@ -15,6 +15,20 @@ Tested on:
 
 # LEVEL 1 - Generic Developer
 
+Open Terminal
+
+## Update System
+
+```
+softwareupdate --all --list
+```
+
+if you happy:
+
+```
+softwareupdate --all --install
+```
+
 ## Install Rosetta
 
 ```
@@ -36,8 +50,6 @@ https://mac.install.guide/ruby/2.html
 ```
 sudo xcode-select --install
 ```
-
-## Update System
 
 CHECK
 
