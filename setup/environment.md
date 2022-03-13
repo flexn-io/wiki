@@ -1,6 +1,15 @@
 # Installation Guide
 
-This guide assumes you have vanilla macos setup
+This guide assumes:
+
+- you have vanilla macos setup
+- you will use `~/.zshrc` as the only bash profile file (recomended)
+- you're running macOS 11.6 or higher
+
+Tested on:
+
+- Mac, Intel, 11.6
+- Mac, M1, 12.2.1
 
 # LEVEL 1 - GENERIC DEVELOPER
 
@@ -40,7 +49,11 @@ https://mac.install.guide/ruby/3.html
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
+If promted by brew:
+
+```
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
 
 source ~/.zshrc
@@ -113,7 +126,9 @@ CHECK
 ssh -T git@github.com
 ```
 
-## Version Manager (Ruby, Node)
+## ASDF Version Manager (Ruby, Node)
+
+We moved from nvm to asdf due to some issues running react-native in nvm setup
 
 ```
 brew install asdf
@@ -128,6 +143,8 @@ CHECK
 ```
 asdf --version
 ```
+
+Add support for legacy setups:
 
 ```
 echo "legacy_version_file = yes" >> ~/.asdfrc
@@ -151,6 +168,8 @@ CHECK
 ruby -v
 ```
 
+Optimise gem sizes:
+
 ```
 echo "gem: --no-document" >> ~/.gemrc
 ```
@@ -164,6 +183,12 @@ asdf install nodejs 16.14.0
 
 asdf global nodejs 16.14.0
 
+source ~/.zshrc
+```
+
+Add additional label pointing to same version:
+
+```
 asdf install nodejs lts-gallium
 
 source ~/.zshrc
@@ -179,6 +204,8 @@ node -v
 
 ```
 gem install cocoapods -v 1.11.2
+
+source ~/.zshrc
 ```
 
 CHECK
@@ -192,8 +219,6 @@ pod --version
 ## Install Yarn
 
 ```
-npm config set scripts-prepend-node-path true
-
 npm i yarn -g
 ```
 
