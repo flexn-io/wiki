@@ -218,11 +218,15 @@ pod --version
 
 ## Install Yarn
 
+Unlocks `-p` : `web`, `chromecast`
+
 ```
 npm i yarn -g
 ```
 
 ## Install Android Studio
+
+Unlocks `-p` : `android`, `androidtv`, `androidwear`
 
 https://developer.android.com/studio
 
@@ -230,9 +234,27 @@ Open, Install, Setup
 
 ## Install Xcode
 
+Unlocks `-p` : `ios`, `tvos`, `macos`
+
 https://apps.apple.com/us/app/xcode/id497799835
 
 Open, Install, Setup
+
+## Install Tizen Studio
+
+Unlocks `-p` : `tizen`, `tizenwatch`, `tizenmobile`
+
+https://developer.tizen.org/development/tizen-studio/download
+
+Download, Open, Install, Setup
+
+## Install WebOS SDK
+
+Unlocks `-p` : `webos`
+
+https://webostv.developer.lge.com/sdk/webos-tv-sdk/introduction/
+
+Download, Open, Install, Setup
 
 ## Setup Renative
 
