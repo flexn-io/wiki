@@ -1,5 +1,7 @@
 # Installation Guide
 
+Supported OS: `macos`, `windows-WIP`, `linux-WIP`
+
 This guide assumes:
 
 - you have vanilla macos setup
@@ -123,7 +125,7 @@ git config -l --global
 ```
 
 ```
-ssh-keygen -t ed25519 -C "beherithrone@gmail.com"
+ssh-keygen -t ed25519 -C "YOUR_EMAIL"
 ```
 
 Navigate to:
