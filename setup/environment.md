@@ -6,12 +6,14 @@ This guide assumes:
 - you will use `~/.zshrc` as the only bash profile file (recomended)
 - you're running macOS 11.6 or higher
 
+NOTE: You can still configure system via cherrypicking but the final results may vary.
+
 Tested on:
 
 - Mac, Intel, 11.6
 - Mac, M1, 12.2.1
 
-# LEVEL 1 - GENERIC DEVELOPER
+# LEVEL 1 - Generic Developer
 
 ## Install Rosetta
 
@@ -214,7 +216,7 @@ CHECK
 pod --version
 ```
 
-# LEVEL 2 - RENATIVE DEVELOPER
+# LEVEL 2 - ReNative Developer
 
 ## Install Yarn
 
@@ -256,7 +258,7 @@ https://webostv.developer.lge.com/sdk/webos-tv-sdk/introduction/
 
 Download, Open, Install, Setup
 
-## Setup Renative
+## Setup ReNative
 
 ```
 git clone git@github.com:renative-org/renative.git
@@ -276,9 +278,9 @@ rnv run -p android
 rnv run -p ios
 ```
 
-# LEVEL 3 - PRO DEVELOPER
+# LEVEL 3 - Pro Developer
 
-NOTE: Opinionated extensions (NOT manadatory)
+NOTE: Opinionated tools, extensions & customisations (NOT manadatory)
 
 ## Bash shortcuts
 
@@ -296,6 +298,8 @@ alias s="/Applications/SourceTree.app/Contents/Resources/stree"
 
 ## Install iTerm
 
+Better terminal
+
 https://iterm2.com/downloads.html
 
 ### Install oh-my-zsh
@@ -312,13 +316,17 @@ Close => Reopen iTerm
 
 ## Install Spectacle
 
+Manage your screen real estate via shortcuts
+
 https://www.spectacleapp.com/
 
 ## Install VSCode
 
+Better IDE
+
 https://code.visualstudio.com/download
 
-Enable Terminal
+Enable Terminal Integration
 
 ```
 CMD+Shift+P => shell command
