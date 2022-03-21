@@ -67,7 +67,7 @@ https://mac.install.guide/ruby/3.html
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-If promted by brew:
+If promted by brew (IMPORTANT: follow the snippet provided by brew) ie:
 
 ```
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
