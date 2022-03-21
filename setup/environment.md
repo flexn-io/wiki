@@ -31,7 +31,7 @@ if you happy:
 softwareupdate --all --install
 ```
 
-## Install Rosetta
+## Install Rosetta (M1 Only)
 
 ```
 softwareupdate --install-rosetta
