@@ -190,6 +190,30 @@ Optimise gem sizes:
 echo "gem: --no-document" >> ~/.gemrc
 ```
 
+## Install Python
+
+Check if you need it first: `python -V`
+
+If yes:
+
+```
+brew install python
+```
+
+Add path to new python bin to your `~/.zshrc` ie:
+
+```
+echo -n "\nexport PATH="/usr/local/opt/python/libexec/bin:$PATH" >> ~/.zshrc
+
+source ~/.zshrc
+```
+
+CHECK:
+
+```
+python -V
+```
+
 ## Install NodeJS (16.14.0)
 
 ```
