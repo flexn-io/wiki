@@ -415,3 +415,15 @@ CHECK
 ```
 docker -v
 ```
+
+## Install SourceTree
+
+Visual addition to git command line
+
+https://www.sourcetreeapp.com/
+
+To ensure husky works correctly in SourceTree IDE:
+
+```
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.huskyrc
+```
