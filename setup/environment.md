@@ -203,7 +203,7 @@ brew install python
 Add path to new python bin to your `~/.zshrc` ie:
 
 ```
-echo -n "\nexport PATH="/usr/local/opt/python/libexec/bin:$PATH" >> ~/.zshrc
+echo -n "\nexport PATH=/usr/local/opt/python/libexec/bin:$PATH" >> ~/.zshrc
 
 source ~/.zshrc
 ```
