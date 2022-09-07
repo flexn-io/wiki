@@ -292,7 +292,7 @@ Download, Open, Install, Setup
 
 Unlocks `-p` : `webos`
 
-https://webostv.developer.lge.com/sdk/webos-tv-sdk/introduction/
+https://webostv.developer.lge.com/develop/tools/sdk-introduction/
 
 Download, Open, Install, Setup
 
