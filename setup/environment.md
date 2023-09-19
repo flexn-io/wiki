@@ -264,6 +264,13 @@ Unlocks `-p` : `web`, `chromecast`
 npm i yarn -g
 ```
 
+## Install Lerna
+
+```
+npm i lerna@6.6.2 -g
+```
+
+
 ## Install Android Studio
 
 Unlocks `-p` : `android`, `androidtv`, `androidwear`
