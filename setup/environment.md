@@ -388,26 +388,44 @@ GitLens
 
 ### Configure Settings
 
-CMD+SHift+P => Open Settins (JSON) =>
+CMD+SHift+P => Open Settings (JSON) =>
 
 ```
 {
-    "editor.formatOnSave": true,
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.tree.indent": 16,
-    "atomKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": false,
-    },
-    "explorer.confirmDragAndDrop": false,
-    "workbench.iconTheme": "minimal-icon-theme",
-    "editor.scrollBeyondLastLine": false,
-    "eslint.format.enable": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "explorer.confirmDelete": false
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.organizeImports": false
+  },
+  "eslint.format.enable": true,
+  "eslint.run": "onSave",
+  "eslint.quiet": true,
+  "editor.formatOnSave": true,
+  "prettier.requirePragma": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "prettier.configPath": ".prettierrc.js",
+  //TYPESCRIPT
+  "typescript.tsdk": "node_modules/typescript/lib/"
 }
 ```
 
