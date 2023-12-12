@@ -256,6 +256,14 @@ pod --version
 
 # LEVEL 2 - ReNative Developer
 
+## Install required dependencies for node-canvas
+
+https://github.com/Automattic/node-canvas
+
+```
+brew install pkg-config cairo pango libpng jpeg giflib librsvg
+```
+
 ## Install Yarn
 
 Unlocks `-p` : `web`, `chromecast`
