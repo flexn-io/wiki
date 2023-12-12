@@ -190,7 +190,7 @@ Optimise gem sizes:
 echo "gem: --no-document" >> ~/.gemrc
 ```
 
-## Install Python
+## Install Python (Intel chip Mac Books)
 
 Check if you need it first: `python -V`
 
@@ -204,6 +204,29 @@ Add path to new python bin to your `~/.zshrc` ie:
 
 ```
 echo -n "\nexport PATH=/usr/local/opt/python/libexec/bin:$PATH" >> ~/.zshrc
+
+source ~/.zshrc
+```
+
+CHECK:
+
+```
+python -V
+```
+## Install Python (M1 chip Mac Books)
+
+Check if you need it first: `python -V` or `python3 -V`
+
+If yes:
+
+```
+brew install python
+```
+
+Add path to new python bin to your `~/.zshrc` ie:
+
+```
+echo -n "\nalias python=/usr/bin/python3" >> ~/.zshrc
 
 source ~/.zshrc
 ```
