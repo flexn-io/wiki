@@ -38,7 +38,7 @@ sudo apt install curl -y
 ### Install Node Version Manager (NVM)
 
 ```
-curl-o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
 
 Activate NVM
@@ -71,6 +71,39 @@ CHECK
 node -v npm -v
 ```
 
+## Install Git
+
+```
+sudo apt-get install git-all
+```
+To configurate Git follow official guide:
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux
+
+## Install Ruby
+
+```
+sudo apt-get install ruby-full
+```
+
+CHECK
+
+```
+ruby -v
+```
+
+## Install Python
+
+```
+sudo apt-get install python3
+```
+
+CHECK
+
+```
+python3 --version
+```
+
 # LEVEL 2 - ReNative Developer
 
 ## Install Yarn
@@ -81,6 +114,12 @@ Unlocks `-p` : `web`, `chromecast`
 npm i -g yarn
 ```
 
+## Install Lerna
+
+```
+npm i lerna@6.6.2 -g
+```
+
 ## Install Android Studio
 
 Unlocks `-p` : `android`, `androidtv`, `androidwear`
@@ -88,6 +127,22 @@ Unlocks `-p` : `android`, `androidtv`, `androidwear`
 https://developer.android.com/studio
 
 Open, Install, Setup
+
+## Install Tizen Studio
+
+Unlocks `-p` : `tizen`, `tizenwatch`, `tizenmobile`
+
+https://developer.tizen.org/development/tizen-studio/download
+
+Download, Open, Install, Setup
+
+## Install WebOS SDK
+
+Unlocks `-p` : `webos`
+
+https://webostv.developer.lge.com/develop/tools/sdk-introduction/
+
+Download, Open, Install, Setup
 
 ## Setup ReNative
 
@@ -105,6 +160,4 @@ cd packages/template-starter
 rnv run -p web
 
 rnv run -p android
-
-rnv run -p ios
 ```
