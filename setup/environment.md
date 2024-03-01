@@ -81,24 +81,18 @@ CHECK
 brew doctor
 ```
 
-## Install Java (15.0.2)
+## Install Java (17)
 
+The Zulu OpenJDK distribution offers JDKs for both Intel and M1 Macs. This will make sure your builds are faster on M1 Macs compared to using an Intel-based JDK.
 ```
-cd ~/Downloads
+brew tap homebrew/cask-versions
+brew install --cask zulu17
 
-curl https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_osx-x64_bin.tar.gz -o openjdk-15.0.2_osx-x64_bin.tar.gz
+# Get path to where cask was installed to double-click installer
+brew info --cask zulu17
 
-sudo mv openjdk-15.0.2_osx-x64_bin.tar.gz /Library/Java/JavaVirtualMachines/
-
-cd /Library/Java/JavaVirtualMachines/
-
-sudo tar -xzf openjdk-15.0.2_osx-x64_bin.tar.gz
-
-sudo rm openjdk-15.0.2_osx-x64_bin.tar.gz
-
-/usr/libexec/java_home -v15
-
-echo -n "\nexport JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home" >> ~/.zshrc
+# After installer finished
+echo -n "\nexport JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home" >> ~/.zshrc
 
 source ~/.zshrc
 ```
