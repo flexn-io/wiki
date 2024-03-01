@@ -316,7 +316,7 @@ yarn bootstrap
 Run Some apps
 
 ```
-cd packages/renative-template-hello-world
+cd packages/template-starter
 
 rnv run -p web
 
