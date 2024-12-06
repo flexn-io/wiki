@@ -31,12 +31,6 @@ if you happy:
 softwareupdate --all --install
 ```
 
-## Install Rosetta (M1 Only)
-
-```
-softwareupdate --install-rosetta
-```
-
 ## Bash
 
 https://mac.install.guide/ruby/1.html
@@ -85,11 +79,7 @@ brew doctor
 
 The Zulu OpenJDK distribution offers JDKs for both Intel and M1 Macs. This will make sure your builds are faster on M1 Macs compared to using an Intel-based JDK.
 ```
-brew tap homebrew/cask-versions
 brew install --cask zulu17
-
-# Get path to where cask was installed to double-click installer
-brew info --cask zulu17
 
 # After installer finished
 echo -n "\nexport JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home" >> ~/.zshrc
@@ -160,14 +150,14 @@ Add support for legacy setups:
 echo "legacy_version_file = yes" >> ~/.asdfrc
 ```
 
-## Install Ruby (3.1.1)
+## Install Ruby (3.1.2)
 
 ```
 asdf plugin add ruby
 
-asdf install ruby 3.1.1
+asdf install ruby 3.1.2
 
-asdf global ruby 3.1.1
+asdf global ruby 3.1.2
 
 source ~/.zshrc
 ```
@@ -186,12 +176,12 @@ echo "gem: --no-document" >> ~/.gemrc
 
 ## Install Python
 
-Check if you need it first: `python -V`
+Check if you need it first: `python3 -V`
 
 If yes:
 
 ```
-brew install python
+brew install python3
 ```
 
 Add path to new python bin to your `~/.zshrc` ie:
@@ -205,17 +195,17 @@ source ~/.zshrc
 CHECK:
 
 ```
-python -V
+python3 -V
 ```
 
-## Install NodeJS (16.14.0)
+## Install NodeJS (18.19.0)
 
 ```
 asdf plugin add nodejs
 
-asdf install nodejs 16.14.0
+asdf install nodejs 18.19.0
 
-asdf global nodejs 16.14.0
+asdf global nodejs 18.19.0
 
 source ~/.zshrc
 ```
@@ -234,10 +224,10 @@ CHECK
 node -v
 ```
 
-## Install Cocoapods (1.11.2)
+## Install Cocoapods (1.15.0)
 
 ```
-gem install cocoapods -v 1.11.2
+gem install cocoapods -v 1.15.0
 
 source ~/.zshrc
 ```
